@@ -1,0 +1,704 @@
+body {
+  margin: 0;
+  display: flex;
+}
+
+.contentntweets {
+  position: absolute;
+  left: 25%;
+  width: 45%;
+  max-height: calc(100vh - 40px);
+  /* Adjust the calculation based on your layout */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: transparent transparent;
+  /* Firefox */
+
+  /* WebKit (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+.tweets .profile-index .tw {
+  display: flex;
+}
+
+.tweets .profile-index .tw i {
+  position: relative;
+  left: 12vw;
+  cursor: pointer;
+}
+
+.contentntweets .subcontents ul {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  width: 20vw;
+  height: 100vh;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: aqua;
+  transition: transform 0.3s ease;
+}
+
+/* .nav {
+  position: fixed;
+  width: 10%;
+  top: 4vh;
+} */
+.divide {
+  position: fixed;
+  top: 5vh;
+  width: 10%;
+  height: 100vh;
+  background-color: aqua;
+  /* hide the menu by default */
+}
+
+
+/* @media (min-width: 768px) {
+  #third-tab {
+    font-size: 2px;
+  }
+} */
+.container {
+  font-size: 1.2rem;
+}
+
+.circle-icon i {
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.circle-icon a {
+  display: flex;
+  gap: 20px;
+}
+
+#tlogo {
+  width: 30%;
+  border-radius: 50%;
+}
+
+#post-btn {
+  height: 8vh;
+  width: 15vw;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.profile-box {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  right: 2vw;
+  width: 18vw;
+  gap: 1.5vw;
+
+}
+
+.pro-img {
+  width: 6vw;
+  border-radius: 50%;
+  border-color: black
+}
+
+#profile-attr {
+  position: relative;
+  top: 4vh;
+}
+
+.profile-box i {
+  margin-top: 3vh;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    left: 0;
+  }
+
+  .profile-box {
+    width: 100%;
+    right: 0;
+  }
+}
+
+
+.postbox {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  width: 100%;
+}
+
+.postbox .inputvalue {
+  display: flex;
+  gap: 2px;
+}
+
+.postbox .inputvalue input {
+  border: none;
+  font-size: 2rem;
+}
+
+.postbox .inputvalue textarea {
+  border: none;
+  font-size: 2rem;
+  height: 100%;
+}
+
+.exampleInput2{
+  display: flex;
+  flex-direction: column;
+  gap: 0vh;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+}
+
+
+.input-symbol {
+  display: flex;
+  gap: 1vw;
+  margin-right: 1vw;
+  color: lightskyblue;
+  position: relative;
+}
+
+.inputs button {
+  width: 5vw;
+  left: 14vw;
+  color: white;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.input-symbol button {
+  color: lightskyblue;
+  border: none;
+  border-radius: 50px;
+}
+
+.input-symbol.emoji {
+  color: green;
+}
+
+.top {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.top button {
+  height: 9vh;
+  border: none;
+  font-weight: bold;
+  flex: 1;
+  position: relative;
+}
+
+.top button:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* .top span {
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+  height: 4px;
+  width: 20px;
+  visibility: hidden;
+  left: 0;
+  transition: width 0.6s ease-in-out;
+}
+
+.top button:hover span {
+  visibility: visible;
+  width: 100%;
+} */
+
+.top i {
+  font-size: 20px;
+  /* Adjust the size of the settings icon */
+  cursor: pointer;
+  margin-left: auto;
+  /* Push the gear icon to the right */
+}
+
+.top i:hover {
+  color: grey;
+}
+
+#third-tab {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  width: 30%;
+  left: 70%;
+  margin-left: 2vw;
+  position: absolute;
+  max-height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.happening {
+  font-weight: bold;
+  padding-top: 5vh;
+}
+
+.newsfeed {
+  padding-top: 20px;
+}
+
+.newsfeed p i {
+  float: right;
+  margin-right: 2vw;
+}
+
+.tweets img {
+  width: 30vw;
+}
+
+.tweets .proimg {
+  width: 5vw;
+}
+
+.profile-index {
+  display: flex;
+  gap: 1.2vw;
+}
+
+.profile-index i {
+  position: relative;
+  left: 20%;
+}
+
+.reaction {
+  display: flex;
+  gap: 4.5vw;
+  align-items: center;
+  color: grey;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.reaction #likes:hover {
+  color: red;
+  border-radius: 5vh;
+}
+
+.profilepage .username {
+  display: flex;
+  height: 6vh;
+  margin: 2%;
+  gap: 2vw;
+}
+
+.profilepage .username button {
+  border: none;
+}
+
+.profilepage .pics {
+  display: flex;
+  margin: 5%;
+  flex-direction: column;
+}
+
+.profilepage .pics .propic {
+  display: flex;
+  gap: 100%;
+}
+
+.profilepage .pics .propic button {
+  position: relative;
+  height: 6vh;
+  width: 8vw;
+  left: 80%;
+  border-radius: 50px;
+  margin-top: 2vh;
+  font-weight: bold;
+  border: none;
+}
+
+.profilepage .pics .propic img {
+  width: 10vw;
+  margin: 2vw;
+  position: absolute;
+  margin: 4vh auto auto 2vw;
+  top: 40vh;
+  border: 4px solid white;
+  border-radius: 80px;
+}
+
+.procontent .proicon {
+  display: flex;
+  gap: 2vw;
+}
+
+.procontent .probutton {
+  margin-top: 2vh;
+  display: flex;
+  gap: 2vw;
+}
+
+.procontent .probutton p {
+  font-weight: bold;
+}
+
+.maincontent {
+  display: flex;
+  gap: 16vw;
+  margin-top: 2vh;
+}
+
+.maincontent button {
+  border: none;
+  font-weight: bolder;
+  color: gray;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.maincontent button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.procont {
+  padding: 2vh;
+}
+.procont ul{
+  list-style: none;
+}
+.explore {
+  margin: 4vh;
+}
+
+.explorecontent {
+  display: flex;
+  gap: 12vw;
+  margin-top: 2vh;
+}
+
+.explorecontent button {
+  border: none;
+  font-weight: bolder;
+  color: gray;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.explorecontent button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.explorecont {
+  margin: 5vh;
+}
+
+.comment img {
+  width: 4vw;
+}
+
+.commentpost {
+  display: flex;
+  justify-content: space-between;
+  /* Add this line */
+  align-items: center;
+}
+
+.centered {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  
+
+}
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+/* .loginpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.loginpage form {
+  width: 80%; 
+  max-width: 400px; 
+}
+
+.loginpage h1 {
+  text-align: center; 
+}
+/* Avoid interfering with Bootstrap classes by using specific selectors */
+/* Ensure proper responsiveness for the login page */
+/* .custom-login-container {
+  font-size: 1.2rem;
+}
+
+.custom-login-btn {
+  width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+}
+
+.custom-login-btn i {
+  margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  /* Adjust layout for smaller screens */
+  /* .col-md-6 {
+    max-width: 100%;
+  } */
+/* } */ */ */
+
+/* LoginPage.css */
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center align the content */
+  font-family: Arial, sans-serif; /* Change font family */
+}
+
+.login-content h1 {
+  font-size: 2rem; /* Increase heading font size */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.custom-login-btn {
+  color: #fff !important; /* Set text color to white */
+  background-color: #007bff !important; /* Set background color to Bootstrap primary color */
+  border-color: #007bff !important; /* Set border color to Bootstrap primary color */
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px; /* Add space between buttons */
+  position: relative; /* Ensure relative positioning for the icon */
+}
+
+.custom-login-btn i {
+  margin-right: 8px; /* Add gap between icon and text */
+}
+
+.custom-login-btn.btn-facebook {
+  background-color: #dc3545 !important; /* Set background color to red */
+  border-color: #dc3545 !important; /* Set border color to red */
+}
+
+.custom-login-btn.btn-facebook:hover {
+  background-color: #bd2130 !important; /* Darken background color on hover */
+  border-color: #bd2130 !important; /* Darken border color on hover */
+}
+
+
+
+.overlay {
+  display: flex;
+  position: fixed;
+  padding: 2% 10% 5% 10%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  max-height: 80vh; /* Set a maximum height for the container */
+  overflow-y: auto;
+}
+
+.detailscontents{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+body.modal-open {
+  overflow: hidden;
+}
+.picsedit{
+  width: 100%;
+  padding: 2% 5%;
+}
+.picpro{
+  width: 50%;
+}
+
+/* messages */
+.container2 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.messages {
+  margin-bottom: 20px;
+}
+
+.message {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message small {
+  color: #666;
+}
+  
+.input-group {
+  display: flex;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+.notification-tab {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.notification-tab h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.notification-tab ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-tab li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-tab li:hover {
+  background-color: #f0f0f0;
+}
+.settings-tab {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-tab h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.settings-tab ul {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-tab li {
+  margin-bottom: 10px;
+}
+
+.settings-tab button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.settings-tab button:hover {
+  background-color: #0056b3;
+}
