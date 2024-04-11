@@ -128,17 +128,13 @@ passport.use(new GoogleStrategy({
     }
 ));
 
-//EAAFHOK9s2jMBOxBtvgzr0cMFF06cseipB2YXhN9TnTFTA8Qg3N7vTGZCy6JOVpnnlfRfVp6JBWuSDm5ZAZC0EcxTYnZBWllT4GZCfXiXwvBtCmJAGdzIxkYyZBHA5bPxrtk0RRXv41tlY1u7G3iKBKTezyhU0MThidZCG0e0bg08inmySK7frQ3DrapW1ZA9LfZA5hZAQy5RjCCsVpRJXf5qAXwwZBVLIb4UPxOw09tkw1h1AYjRuB8AU0ZBpCsr2DtZBHawuEJGZA0QZDZD
+
 passport.use(new FacebookStrategy({
-    //
-    //
     clientID: process.env.FACEBOOK_CLIENTID,
     clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
     callbackURL: process.env.FACEBOOK_CALLBACKURL,
     profileFields: ['id', 'emails', 'displayName', 'photos']
 }, function (accessToken, refreshToken, profile, cb) {
-    // Verify or create user logic here
-    // For example:
     const email = profile.emails[0].value;
     const image = profile.photos[0].value;
     TUser.findOrCreate({ facebookId: profile.id, username: profile.displayName, email: email, picture: image }, function (err, user) {
@@ -569,23 +565,6 @@ app.post("/updatePersonalInfo", async (req, res) => {
         await user.personalInfo.save();
         await user.save();
         res.status(200).json({ message: "Personal info updated successfully", user });
-        // const newInfo = new PersonalInfo({
-        //     uId:userId,
-        //     name:username,
-        //     location:location,
-        //     dob:dob,
-        // });
-        //     await user.save();
-        //     res.status(200).json({ message: "Personal info updated successfully", user });
-        // }
-        // else {
-        //     res.status(404).json({ error: "not found" });
-        // }
-        // user.personalInfo.location = location;
-        // user.personalInfo.dob = dob;
-        // await user.save();
-
-        //res.status(200).json({ message: "Personal info updated successfully" });//,user
     } catch (error) {
         console.error('Error:', error);
         res.status(500).json({ error: "Internal Server Error" });
@@ -613,19 +592,7 @@ app.get("/auth/google/secrets",
 
 
 
-app.get("/secrets", function (req, res) {
-    TUser.find({ "email": "ff@gmail.com" })
-        .then((foundUsers) => {
-            if (foundUsers) {
-                //res.render("secrets", { usersWithSecrets: foundUsers });
-                res.json({ foundUsers });
-            }
-        })
-        .catch((err) => {
-            console.log(err);
-        });
 
-});
 
 
 app.get("/submit", function (req, res) {
