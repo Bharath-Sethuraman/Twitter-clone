@@ -50,17 +50,17 @@ Provides options for managing account settings, notifications, etc.
 Empower users to tailor their experience according to their preferences.
 
 **Data Flow Diagram**
-Level 0: ![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/b5f3c784-1f06-4efa-a489-e98325589670)
+ ![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/b5f3c784-1f06-4efa-a489-e98325589670)
 
 
 
 
-Level 1: ![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/d640b4b6-f4be-4862-b8c6-7fbb964de8eb)
+ ![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/d640b4b6-f4be-4862-b8c6-7fbb964de8eb)
 
 
 
 
-Level 2 : ![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/427b4a32-9760-4dad-b6ab-3e28ac11c3f8)
+ ![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/427b4a32-9760-4dad-b6ab-3e28ac11c3f8)
 
 
 # Getting Started with Create React App
