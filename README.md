@@ -1,3 +1,65 @@
+In the digital era, social media platforms have become essential tools for communication and networking. This project presents a Twitter clone developed using the MERN stack (MongoDB, Express.js, React.js, Node.js)
+
+
+**Module Description**
+
+1. Authentication
+Manages user authentication and authorization.
+Provides login and registration functionalities for users.
+Utilizes Passport.js with Google OAuth and Facebook for secure authentication.
+Enables users to access the platform securely
+
+
+2. Home Page
+Acts as the initial landing page for users.
+Features options for users to log in or register.
+Serves as the entry point to the main content page after authentication
+
+3. Content Page
+Centralizes main features and functionalities of the application.
+Divided into sections including:
+Navigation Bar
+Home Content
+What’s Happening Feed
+
+4. Bookmarks Page
+The Bookmarks module enables users to save tweets for later viewing.
+Users can bookmark tweets they find interesting or wish to revisit at a later time
+
+5. Explore Page
+The Explore module provides users with curated content and trending topics.
+Users can discover new accounts to follow, trending hashtags, and popular tweets.
+
+6. User Profile Page
+Allows users to manage their profiles, preferences, and settings.
+Provides customization options for a tailored user experience within the application.
+Enables users to view and update their personal information.
+
+7. Multimedia Upload
+Manages and displays notifications for user interactions such as likes, comments, and mentions.
+Provides real-time updates on user activities and engagements.
+Enhances user engagement and interaction within the platform.
+
+8. Notification Page
+Open the Design Ideas pane for instant slide makeovers. 
+When we have design ideas, we’ll show them to you right there. 
+
+9. Settings Page
+Enables users to customize their application preferences and settings.
+Provides options for managing account settings, notifications, etc.
+Empower users to tailor their experience according to their preferences.
+
+**Data Flow Diagram**
+Level 0
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/b5f3c784-1f06-4efa-a489-e98325589670)
+
+Level 1
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/d640b4b6-f4be-4862-b8c6-7fbb964de8eb)
+
+Level 2
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/427b4a32-9760-4dad-b6ab-3e28ac11c3f8)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +130,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Home Page
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/f31809bb-8298-493d-bb18-2cb4a0a727ab)
+
+Content(forYou)
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/e6d085fd-a0bc-4c15-82a0-2a365b9153a5)
+
+Content(Following)
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/7f6aa1fa-01e6-4e1d-b453-2bd967fadb20)
+
+Explore Page
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/e3950449-8f63-4f48-ba23-9aca53c1cae7)
+
+Profile Page
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/e8ced4a9-f167-4531-892e-b111f60dcfc2)
+
+Bookmarks Page
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/9ef9eaa3-f78d-48da-aa43-7a93f9803f94)
+
+Notification Page
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/40eec295-c38c-4e1f-989a-f9f56caac6cf)
+
+More(Settings) Page
+![image](https://github.com/Bharath-Sethuraman/Twitter-clone/assets/135990314/2285e9c0-fbe0-4b7c-afa3-7a55e36ad765)
